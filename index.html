@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CPU Stress Test</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CPU Stress Test</h1>
+      <label for="numCores">Core Number:</label>
+      <input type="number" id="numCores" min="1" />
+      <div id="progressContainer">
+        <div id="progressBar"></div>
+      </div>
+      <div id="cpuUsageText">CPU 사용률: 0%</div>
+      <button id="startButton">Start</button>
+      <button id="stopButton" disabled>Stop</button>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
